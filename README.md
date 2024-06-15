@@ -72,9 +72,9 @@ For better understanding, refer to [cometml experiment](https://www.comet.com/ga
 
 As was assumed, the model trained on such a small dataset for multiclass detection has a very low metrics level. Metrics are very oscillating which shows that it is quite difficult for the model to generalize the information and make a correct prediction. Also, considering the loss dynamic, we can see that val loss becomes growing up in the middle of the training, while train loss continue decreasing which could possibly mean the overfitting. Would be better to train more epochs to become sure if we have an overfitting or not but it is already clear that current task definition is too difficult for such small dataset.
 
-![Alt text](readme_images/init_multi_800/confusion_matrix.png)
-
-![Alt text](readme_images/init_multi_800/F1_curve.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/init_multi_800/confusion_matrix.png"> | <img src="readme_images/init_multi_800/F1_curve.png"> |
 
 ### Binary definition
 
@@ -86,9 +86,10 @@ For better understanding, refer to [cometml experiment](https://www.comet.com/ga
 
 We see that metrics and their dynamic are quite the same. Seems like corresponding data is not enough for the model to build strong correlations and provide accurate predictions.
 
-![Alt text](readme_images/init_binary_800/confusion_matrix.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/init_binary_800/confusion_matrix.png"> | <img src="readme_images/init_binary_800/F1_curve.png"> |
 
-![Alt text](readme_images/init_binary_800/F1_curve.png)
 
 ## Training on expanded dataset
 
@@ -126,9 +127,9 @@ For better understanding, refer to [cometml experiment](https://www.comet.com/ga
 
 We see that metrics and their dynamic became better, moreover, metrics still have the increasing trend which means that we can continue trainig model for further epochs till the moment we face the plane dynamic of metrics which corresponds to overfitting.
 
-![Alt text](readme_images/united_multi_800/confusion_matrix.png)
-
-![Alt text](readme_images/united_multi_800/F1_curve.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/united_multi_800/confusion_matrix.png"> | <img src="readme_images/united_multi_800/F1_curve.png"> |
 
 Lets also take a practical look at visualisations of predictions and compare them with labels.
 
@@ -152,9 +153,9 @@ For better understanding, refer to [cometml experiment](https://www.comet.com/ga
 
 Here the metrics become much better comparing to multiclass definition.
 
-![Alt text](readme_images/united_binary_800/confusion_matrix.png)
-
-![Alt text](readme_images/united_binary_800/F1_curve.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/united_binary_800/confusion_matrix.png"> | <img src="readme_images/united_binary_800/F1_curve.png"> |
 
 Lets also take a practical look at visualisations of predictions and compare them with labels.
 
@@ -186,9 +187,10 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ![Alt text](readme_images/united_binary_Cardiomegaly_800/results.png)
 
-![Alt text](readme_images/united_binary_Cardiomegaly_800/confusion_matrix.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/united_binary_Cardiomegaly_800/confusion_matrix.png"> | <img src="readme_images/united_binary_Cardiomegaly_800/F1_curve.png"> |
 
-![Alt text](readme_images/united_binary_Cardiomegaly_800/F1_curve.png)
 
 | Labels | Predictions |
 | --- | --- |
@@ -205,9 +207,10 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ![Alt text](readme_images/united_binary_Mass_Nodule_800/results.png)
 
-![Alt text](readme_images/united_binary_Mass_Nodule_800/confusion_matrix.png)
+| Matrix | F1 |
+| --- | --- |
+| <img src="readme_images/united_binary_Mass_Nodule_800/confusion_matrix.png"> | <img src="readme_images/united_binary_Mass_Nodule_800/F1_curve.png"> |
 
-![Alt text](readme_images/united_binary_Mass_Nodule_800/F1_curve.png)
 
 | Labels | Predictions |
 | --- | --- |
