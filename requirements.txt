@@ -1,0 +1,12 @@
+# setuptools
+# wheel
+# urllib3
+progressbar
+PyYAML
+pandas
+numpy
+tqdm
+matplotlib
+opencv-python
+ultralytics
+comet_ml

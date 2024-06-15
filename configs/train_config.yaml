@@ -1,0 +1,29 @@
+architecture: yolov8s
+profile: False # Enables profiling of ONNX and TensorRT speeds during training, useful for optimizing model deployment.
+save_hybrid: False # !!! provides a bug with metrics !!!!
+resume: False
+
+epochs: 100
+warmup_epochs: 15
+patience: 5
+batch: 64
+imgsz: 800
+
+conf: 0.03
+iou: 0.8
+
+single_cls: False #treat multiclass as binary
+
+optimizer: auto
+lr: 0.00001
+wd: 0.005
+cos_lr: True
+
+# Augs
+close_mosaic: 15
+mosaic: 1
+mixup: 0.5
+erasing: 0.4
+crop_fraction: 0
+copy_paste: 0.8
+
