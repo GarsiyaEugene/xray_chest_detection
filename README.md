@@ -48,9 +48,10 @@ Mosaic augmentation is desabled for last 15 epochs.
 
 Here you can observe some data analytics. As we can see, the classes distribution is quite balanced but still we have too tiny number of samples per class for strong model development. Also, boxes diversity in terms of aspect ratio, sizes and location is quite high. Some of the classes present big objects, while others are mostly small, tall and even similar to each other.
 
-![Alt text](readme_images/init_multi_800/labels_distrib_init_data.jpg)
+| Labels | Correlogram |
+| --- | --- |
+| <img src="readme_images/init_multi_800/labels_distrib_init_data.jpg"> | <img src="readme_images/init_multi_800/labels_correlogram_init_data.jpg"> |
 
-![Alt text](readme_images/init_multi_800/labels_correlogram_init_data.jpg)
 
 ### Trainig parameters
 
@@ -113,9 +114,9 @@ Here is a new list of classes:
 
 New data was also splitted to **train/val/test** modes and these splits were united with initial ones.
 
-![Alt text](readme_images/united_multi_800/labels.jpg)
-
-![Alt text](readme_images/united_multi_800/labels_correlogram.jpg)
+| Labels | Correlogram |
+| --- | --- |
+| <img src="readme_images/united_multi_800/labels.jpg"> | <img src="readme_images/united_multi_800/labels_correlogram.jpg"> |
 
 In new expanded dataset we observe that labels became much more unbalanced but the absolute number of instances became much higher. That fact might help model to learn better correlations.
 
@@ -179,11 +180,13 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ### Cardiomegaly
 
-![Alt text](readme_images/united_binary_Cardiomegaly_800/labels.jpg)
-
-![Alt text](readme_images/united_binary_Cardiomegaly_800/labels_correlogram.jpg)
-
 ![Alt text](readme_images/united_binary_Cardiomegaly_800/train_batch0.jpg)
+
+
+| Labels | Correlogram |
+| --- | --- |
+| <img src="readme_images/united_binary_Cardiomegaly_800/labels.jpg"> | <img src="readme_images/united_binary_Cardiomegaly_800/labels_correlogram.jpg"> |
+
 
 ![Alt text](readme_images/united_binary_Cardiomegaly_800/results.png)
 
@@ -199,11 +202,12 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ### Nodule/Mass
 
-![Alt text](readme_images/united_binary_Mass_Nodule_800/labels.jpg)
-
-![Alt text](readme_images/united_binary_Mass_Nodule_800/labels_correlogram.jpg)
-
 ![Alt text](readme_images/united_binary_Mass_Nodule_800/train_batch1.jpg)
+
+| Labels | Correlogram |
+| --- | --- |
+| <img src="readme_images/united_binary_Mass_Nodule_800/labels.jpg"> | <img src="readme_images/united_binary_Mass_Nodule_800/labels_correlogram.jpg"> |
+
 
 ![Alt text](readme_images/united_binary_Mass_Nodule_800/results.png)
 
