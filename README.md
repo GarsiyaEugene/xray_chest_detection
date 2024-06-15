@@ -134,6 +134,11 @@ Lets also take a practical look at visualisations of predictions and compare the
 
 Predictions are not ideal but look adequate. We can also note that we fail to find most of the small objects and sometimes find extra objects of major class.
 
+| Labels | Predictions |
+| --- | --- |
+| <img src="readme_images/united_multi_800/val_batch0_labels.jpg"> | <img src="readme_images/united_multi_800/val_batch0_pred.jpg"> |
+
+
 **<center>Labels</center>**
 
 ![Alt text](readme_images/united_multi_800/val_batch0_labels.jpg)
