@@ -138,22 +138,9 @@ Predictions are not ideal but look adequate. We can also note that we fail to fi
 | --- | --- |
 | <img src="readme_images/united_multi_800/val_batch0_labels.jpg"> | <img src="readme_images/united_multi_800/val_batch0_pred.jpg"> |
 
-
-**<center>Labels</center>**
-
-![Alt text](readme_images/united_multi_800/val_batch0_labels.jpg)
-
-**<center>Predictions</center>**
-
-![Alt text](readme_images/united_multi_800/val_batch0_pred.jpg)
-
-**<center>Labels</center>**
-
-![Alt text](readme_images/united_multi_800/val_batch2_labels.jpg)
-
-**<center>Predictions</center>**
-
-![Alt text](readme_images/united_multi_800/val_batch2_pred.jpg)
+| Labels | Predictions |
+| --- | --- |
+| <img src="readme_images/united_multi_800/val_batch2_labels.jpg"> | <img src="readme_images/united_multi_800/val_batch2_pred.jpg"> |
 
 ### Binary definition
 
@@ -173,13 +160,9 @@ Lets also take a practical look at visualisations of predictions and compare the
 
 Predictions still are not ideal but look adequate. It's clear that model has begun to learn correlations much better comparing to the one trained on initial dataset.
 
-**<center>Labels</center>**
-
-![Alt text](readme_images/united_binary_800/val_batch0_labels.jpg)
-
-**<center>Predictions</center>**
-
-![Alt text](readme_images/united_binary_800/val_batch0_pred.jpg)
+| Labels | Predictions |
+| --- | --- |
+| <img src="readme_images/united_binary_800/val_batch0_labels.jpg"> | <img src="readme_images/united_binary_800/val_batch0_pred.jpg"> |
 
 
 ## NMS tuning
@@ -207,13 +190,10 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ![Alt text](readme_images/united_binary_Cardiomegaly_800/F1_curve.png)
 
-**<center>Labels</center>**
+| Labels | Predictions |
+| --- | --- |
+| <img src="readme_images/united_binary_Cardiomegaly_800/val_batch0_labels.jpg"> | <img src="readme_images/united_binary_Cardiomegaly_800/val_batch0_pred.jpg"> |
 
-![Alt text](readme_images/united_binary_Cardiomegaly_800/val_batch0_labels.jpg)
-
-**<center>Predictions</center>**
-
-![Alt text](readme_images/united_binary_Cardiomegaly_800/val_batch0_pred.jpg)
 
 ### Nodule/Mass
 
@@ -229,13 +209,9 @@ Lets train 2 models for 2 major classes presented in the expanded dataset: Cardi
 
 ![Alt text](readme_images/united_binary_Mass_Nodule_800/F1_curve.png)
 
-**<center>Labels</center>**
-
-![Alt text](readme_images/united_binary_Mass_Nodule_800/val_batch2_labels.jpg)
-
-**<center>Predictions</center>**
-
-![Alt text](readme_images/united_binary_Mass_Nodule_800/val_batch2_pred.jpg)
+| Labels | Predictions |
+| --- | --- |
+| <img src="readme_images/united_binary_Mass_Nodule_800/val_batch2_labels.jpg"> | <img src="readme_images/united_binary_Mass_Nodule_800/val_batch2_pred.jpg"> |
 
 We can conclude that even we switched to predict only one class for the network, we still fail to detect small objects even having a good number of samples. Possibly, chosen image size is too small for accurate detection of small objects for this task definition.
 
