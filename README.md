@@ -186,7 +186,7 @@ As was stated in the begining of trainig section, the NMS confidence value of **
 
 As was described previously, each class presents a set of boxes with particular aspect ratio and sizes. It's pretty clear that it becomes difficult for the model to learn strong correlations for each class at once but it could be much simplier for the model to be trained only on one class.
 
-Lets train 3 models for 3 major classes presented in the expanded dataset: Cardiomegaly (mostly rectangular boxes of big size), Mass/Nodule (mostly square small boxes with wide location distribution on the image) and Effusion (mostly tall boxes). We expect the model trained only for one class to show high metrics and quite accurate predictions.
+Lets train 2 models for 2 major classes presented in the expanded dataset: Cardiomegaly (mostly rectangular boxes of big size) and Mass/Nodule (mostly square small boxes with wide location distribution on the image). We expect the model trained only for one class to show high metrics and quite accurate predictions.
 
 ### Cardiomegaly
 
