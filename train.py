@@ -5,7 +5,6 @@ from ultralytics import settings
 import shutil
 
 
-
 def main():
     train_config = yaml.safe_load(open('configs/train_config.yaml'))
 

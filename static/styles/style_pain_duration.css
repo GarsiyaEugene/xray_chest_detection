@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+form #duration-slider {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+form #duration-slider::before {
+  content: " ";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  width: calc(100% * (15 / 16));
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #000;
+}
+form #duration-slider input, form #duration-slider label {
+  box-sizing: border-box;
+  flex: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+form #duration-slider label {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+form #duration-slider label::before {
+  content: attr(data-duration-amount);
+  position: absolute;
+  left: 50%;
+  padding-top: 10px;
+  transform: translate(-50%, 45px);
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0.85;
+  transition: all 0.15s ease-in-out;
+}
+form #duration-slider label::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+form #duration-slider label:hover::after {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+form #duration-slider input {
+  display: none;
+}
+form #duration-slider input:checked + label::before {
+  font-weight: 800;
+  opacity: 1;
+}
+form #duration-slider input:checked + label::after {
+  border-width: 4px;
+  transform: translate(-50%, -50%) scale(0.75);
+}
+form #duration-slider input:checked ~ #duration-amount-pos {
+  opacity: 1;
+}
+form #duration-slider input:checked:nth-child(1) ~ #duration-amount-pos {
+  left: 2.0%;
+}
+form #duration-slider input:checked:nth-child(3) ~ #duration-amount-pos {
+  left: 8.0%;
+}
+form #duration-slider input:checked:nth-child(5) ~ #duration-amount-pos {
+  left: 17.25%;
+}
+form #duration-slider input:checked:nth-child(7) ~ #duration-amount-pos {
+  left: 22.5%;
+}
+form #duration-slider input:checked:nth-child(9) ~ #duration-amount-pos {
+  left: 28.68%;
+}
+form #duration-slider input:checked:nth-child(11) ~ #duration-amount-pos {
+  left: 34.0%;
+}
+form #duration-slider input:checked:nth-child(13) ~ #duration-amount-pos {
+  left: 44.5%;
+}
+form #duration-slider input:checked:nth-child(15) ~ #duration-amount-pos {
+  left: 50.55%;
+}
+form #duration-slider input:checked:nth-child(17) ~ #duration-amount-pos {
+  left: 53.7%;
+}
+form #duration-slider input:checked:nth-child(19) ~ #duration-amount-pos {
+  left: 59.92%;
+}
+form #duration-slider input:checked:nth-child(21) ~ #duration-amount-pos {
+  left: 66.17%;
+}
+form #duration-slider input:checked:nth-child(23) ~ #duration-amount-pos {
+  left: 72.44%;
+}
+form #duration-slider input:checked:nth-child(25) ~ #duration-amount-pos {
+  left: 78.69%;
+}
+form #duration-slider input:checked:nth-child(27) ~ #duration-amount-pos {
+  left: 85.0%;
+}
+form #duration-slider input:checked:nth-child(29) ~ #duration-amount-pos {
+  left: 91.26%;
+}
+form #duration-slider input:checked:nth-child(31) ~ #duration-amount-pos {
+  left: 97.53%;
+}
+form #duration-slider #duration-amount-pos {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  transition: all 0.15s ease-in-out;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  opacity: 0;
+  z-index: 2;
+}
+form:valid #duration-slider input + label::before {
+  transform: translate(-50%, 45px) scale(0.9);
+  transition: all 0.15s linear;
+}
+form:valid #duration-slider input:checked + label::before {
+  transform: translate(-50%, 45px) scale(1.1);
+  transition: all 0.15s linear;
+}
+

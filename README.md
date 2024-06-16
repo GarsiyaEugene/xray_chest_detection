@@ -276,3 +276,12 @@ The proof of concept for abnormalities detection on chest xrays were proven.
 - Medical detectors and pretrained models (smth similar to MedSam)
 
 
+# Demo
+
+Just upload an X-Ray chest image and the app will show you detected abnormalities based on 4 models described above. Or just use test images from `images_for_inference`.
+
+The app is available [here]()
+
+![Alt text](readme_images/demo/home_page.png)
+
+![Alt text](readme_images/demo/detection.png)
