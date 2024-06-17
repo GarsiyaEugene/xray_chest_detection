@@ -288,11 +288,11 @@ pip3 install -r requirements.txt
 python3 demo.py
 ```
 
-The app will be available locally on http://www.127.0.0.1:8080
+The app will be available locally on http://127.0.0.1:8080
 
 Just upload an X-Ray chest image and the app will show you detected abnormalities based on 4 models described above. Or just use test images from `images_for_inference`.
 
-The app is available [here]()
+The app is also available online [here](https://xray-detection-426613.ew.r.appspot.com)
 
 ![Alt text](readme_images/demo/home_page.png)
 

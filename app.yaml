@@ -1,4 +1,7 @@
 runtime: python38
-instance_class: F1
+env_variables:
+    CLOUD_STORAGE_BUCKET: xray-detection-426613.appspot.com
+entrypoint: gunicorn -b :$PORT demo:app
+instance_class: F4
 automatic_scaling:
   max_instances: 1
