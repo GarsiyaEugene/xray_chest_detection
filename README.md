@@ -265,15 +265,19 @@ The proof of concept for abnormalities detection on chest xrays were proven.
 - Try to annotate the unlabeled images based on accurate classification model. For example, using GradCam to get an attention heatmap for each class and localize the objects based on heatmap intensity thresholding.
 - Train on patches of images instead of initial images to detect small objects better
 - Increase image size and batch size and train much more epochs
+- Transfer learning instead of 2 datasets united
+- Modify the head of YOLOV8 to deal with much samller objects (Ex. as [described here](https://www.researchgate.net/publication/378435004_Improved_small-object_detection_using_YOLOv8_A_comparative_study))
+- Play with loss weights
 
 ## Complex approaches (research is required)
 
 - Smart xray preprocessing
 - Comples pre and post-processing
 - Usage of foundation models
-- Detectors if we get enough data
+- Transformers if we get enough data (DETR or YOLO-based)
 - Few shot learning to workaround with limitted datasets
 - Medical detectors and pretrained models (smth similar to MedSam)
+- Self-supervised learning (like DINO)
 
 
 # Demo
